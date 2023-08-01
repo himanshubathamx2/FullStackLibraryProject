@@ -64,6 +64,7 @@ export const SearchBooksPage = () => {
       setHttpError(error.message);
     });
     window.scrollTo(0, 0); //each tym useEffect ran ...page will be scrolled to the top
+    // eslint-disable-next-line
   }, [currentPage, searchUrl]);
 
   if (isLoading) {
@@ -124,26 +125,31 @@ export const SearchBooksPage = () => {
                 </button>
                 <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                   <li onClick={() => categoryField("ALL")}>
+                    {/* eslint-disable-next-line */}
                     <a className="dropdown-item" href="#">
                       All
                     </a>
                   </li>
                   <li onClick={() => categoryField("FE")}>
+                    {/* eslint-disable-next-line */}
                     <a className="dropdown-item" href="#">
                       Front End
                     </a>
                   </li>
                   <li onClick={() => categoryField("BE")}>
+                    {/* eslint-disable-next-line */}
                     <a className="dropdown-item" href="#">
                       Back End
                     </a>
                   </li>
                   <li onClick={() => categoryField("Data")}>
+                    {/* eslint-disable-next-line */}
                     <a className="dropdown-item" href="#">
                       Data
                     </a>
                   </li>
                   <li onClick={() => categoryField("DevOps")}>
+                    {/* eslint-disable-next-line */}
                     <a className="dropdown-item" href="#">
                       DevOps
                     </a>
