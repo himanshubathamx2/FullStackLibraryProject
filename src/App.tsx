@@ -9,6 +9,7 @@ function App() {
       <Navbar />
       <HomePage />
       <Footer />
+      {/* check */}
     </>
   );
 }
