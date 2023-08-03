@@ -1,4 +1,6 @@
 package com.mine.me.libraryapi.entity;
+import org.hibernate.annotations.CreationTimestamp;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -21,6 +23,7 @@ public class Review
 	private String userEmail;
 	
 	@Column(name="date")
+	@CreationTimestamp
 	private String date;
 	
 	@Column(name="rating")
